@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.peeoner174.msi.oneapril2.UserActivity.UserInfoActivity">
+    <item
+        android:title="123"/>
+    <item
+        android:title="245"/>
+</menu>
