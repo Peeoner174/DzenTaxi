@@ -25,7 +25,7 @@ class TripDataLoaderWeb {
         val responseText = response?.body()!!.string()
         /**Десериализация данных из JSON в Java-класс
         *[responseText] - строка, в которой информация в формате JSON
-        *[*.List] - Указываем к объекту какого типа нужно привести строку(этот тип вернёт функция)
+        *[*git remote add origin https://github.com/Peeoner174/DZen_Taxi.git.List] - Указываем к объекту какого типа нужно привести строку(этот тип вернёт функция)
         **/
         val trips = Gson().fromJson(responseText, Trip.List::class.java)
         trips
