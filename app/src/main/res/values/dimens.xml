@@ -5,4 +5,15 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">180dp</dimen>
     <dimen name="app_bar_height">180dp</dimen>
+
+    <dimen name="activity_margin">8dp</dimen>
+    <dimen name="sm_activity_margin">8dp</dimen>
+    <dimen name="text_padding_list">20dp</dimen>
+    <dimen name="text_primary">16sp</dimen>
+    <dimen name="text_secondary">14sp</dimen>
+    <dimen name="avatar_size">40dp</dimen>
+    <dimen name="avatar_big_size">50dp</dimen>
+    <dimen name="md_key_lines">16dp</dimen>
+    <dimen name="sm_key_lines">8dp</dimen>
+    <dimen name="bottom_btn_post">40dp</dimen>
 </resources>

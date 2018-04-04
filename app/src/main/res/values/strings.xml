@@ -1,45 +1,41 @@
 <resources>
+    <string name="user_name">Павел Коченда</string>
     <string name="app_name">oneApril2</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="two">Молча брожу я средь полей
-Тоскую, грущу о даме своей,
-Как дорога она мне была,
-И без нее мне жизнь не мила.
-
-Помню тот день я, как сейчас,
-Сели за стол десятый был час,
-Ласково нам светила луна,
-Даме своей налил я вина.
-
-Лала-лалай лала-лала-лалай
-Лала-лалай лала-лала-лалай
-Лала-лалай лала-лала-лалай
-Лала-лалай лала-лала-лалай
-
-Стали мы с ней при свечах танцевать,
-Старался ее я покрепче обнять,
-Магнитофон сладко нам пел,
-Я хмельную ее душой и телом хотел.
-
-На пол упало платье ее,
-Застучало в груди сердце мое,
-В волосы я ей страстно дышал,
-Взгляд ее нежный меня сокрушал.
-
-Лала-лалай лала-лала-лалай
-Лала-лалай лала-лала-лалай
-Лала-лалай лала-лала-лалай
-Лала-лалай лала-лала-лалай
-
-И вот тогда случилась беда,
-Мне этот миг не забыть никогда.
-На арбузную корку наступила она
-И… хлоп головой об угол стола,
-
-Вместе с ней падал и я
-Вывихнул руку, но это фигня.
-Долго ее я жить умолял,
-Арбузную корку я в сердцах проклинал.
-Читать на сайте: https://www.gl5.ru/k/korol-i-shut/korol-i-shut-arbuznaja-korka.</string>
+    <string name="tab_title_posts">Posts</string>
+    <string name="tab_title_albums">Albums</string>
+    <string name="tab_title_info">Info</string>
+    <string name="user_info_company_hint">Company</string>
+    <string name="user_info_address_hint">Город</string>
+    <string name="user_info_website_hint">Страница</string>
+    <string name="user_info_email_hint">Email</string>
+    <string name="user_info_phone_hint">Телефон</string>
+    <string name="user_info_nickname_hint">Имя</string>
+    <string name="user_info_name_hint">Name</string>
+    <string name="description_ic_profile">profile ic</string>
+    <string name="description_ic_phone">phone ic</string>
+    <string name="description_ic_email">email ic</string>
+    <string name="description_ic_website">website ic</string>
+    <string name="description_ic_address">address ic</string>
+    <string name="description_ic_company">company ic</string>
+    <string name="description_ic_album">album ic</string>
+    <string name="description_image_user">user image</string>
+    <string name="error_loading_users">Error while loading users</string>
+    <string name="error_loading_posts">Error while loading posts</string>
+    <string name="error_loading_user_info">Error while loading user info</string>
+    <string name="error_loading_albums">Error while loading albums</string>
+    <string name="no_users">There are no users</string>
+    <string name="no_posts">There are no posts</string>
+    <string name="no_albums">There are no albums</string>
+    <string name="description_ic_empty_state">Empty state ic</string>
+    <string name="description_ic_avatar">avatar ic</string>
+    <string name="comments_count">COMMENTS</string>
+    <string name="dd_mm_yy">dd:mm:yy</string>
+    <string name="description_ic_comments">Comments ic</string>
+    <string name="no_comments">No comments</string>
+    <string name="error_loading_comments">Error while loading comments</string>
+    <string name="title_place">Карта</string>
+    <string name="title_tape">Лента</string>
+    <string name="title_my_profile">Профиль</string>
 </resources>

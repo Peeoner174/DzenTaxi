@@ -7,6 +7,6 @@
         android:id="@+id/two_view_page_user_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/two"/>
+        android:text="12645"/>
 
 </android.support.constraint.ConstraintLayout>

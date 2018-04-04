@@ -1,16 +1,16 @@
-package com.peeoner174.msi.oneapril2.UserActivity.Adapter
+package com.peeoner174.msi.oneapril2.driver.adapter
 
 import android.support.v4.view.PagerAdapter
 import android.view.View
 import android.view.ViewGroup
-import com.peeoner174.msi.oneapril2.UserActivity.ViewProducer
+import com.peeoner174.msi.oneapril2.driver.producer.UserViewProducer
 
 import java.util.ArrayList
 
-class ViewPagerAdapter : PagerAdapter() {
-    private val viewProducerList = ArrayList<ViewProducer>()
+class UserViewPagerAdapter : PagerAdapter() {
+    private val viewProducerList = ArrayList<UserViewProducer>()
 
-    private val tabTitles = arrayOf("Tab1", "Tab2")
+    private val tabTitles = arrayOf("ОБО МНЕ", "МОИ ПОЕЗДКИ")
 
 
     override fun getPageTitle(position: Int): CharSequence? {
@@ -21,8 +21,8 @@ class ViewPagerAdapter : PagerAdapter() {
         return viewProducerList.size
     }
 
-    fun addView(viewProducer: ViewProducer) {
-        viewProducerList.add(viewProducer)
+    fun addView(userViewProducer: UserViewProducer) {
+        viewProducerList.add(userViewProducer)
     }
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {

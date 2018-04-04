@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu1"
-        android:title="123" />
+        android:title="Фотографии" />
 
     <item
         android:id="@+id/menu2"
-        android:title="456" />
+        android:title="Заметки" />
 
 </menu>
