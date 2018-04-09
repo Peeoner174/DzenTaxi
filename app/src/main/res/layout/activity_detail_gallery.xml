@@ -5,13 +5,14 @@
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.peeoner174.msi.oneapril2.driver.activity.DetailGalleryActivity">
+    tools:context="com.peeoner174.msi.oneapril2.dzen.ui.activity.DetailGalleryActivity">
 
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/container"
+        android:id="@+id/container1"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/detail_toolbar"
@@ -20,5 +21,4 @@
         android:background="@android:color/transparent"
         app:elevation="0dp"
         app:popupTheme="@style/AppTheme.PopupOverlay" />
-
 </android.support.design.widget.CoordinatorLayout>

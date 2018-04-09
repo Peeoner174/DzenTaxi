@@ -4,4 +4,6 @@
     tools:context="com.grafixartist.gallery.DetailActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/places" android:title="@string/photo_places"
+        android:orderInCategory="100" app:showAsAction="never" />
 </menu>

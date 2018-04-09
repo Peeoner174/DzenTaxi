@@ -1,0 +1,56 @@
+//FIREBASE
+//{
+//  "project_info": {
+//    "project_number": "832354546607",
+//    "firebase_url": "https://dzen-200006.firebaseio.com",
+//    "project_id": "dzen-200006",
+//    "storage_bucket": "dzen-200006.appspot.com"
+//  },
+//  "client": [
+//    {
+//      "client_info": {
+//        "mobilesdk_app_id": "1:832354546607:android:c24798053d17f69d",
+//        "android_client_info": {
+//          "package_name": "com.peeoner174.msi.oneapril2"
+//        }
+//      },
+//      "oauth_client": [
+//        {
+//          "client_id": "832354546607-4sbhveijpdppoi7d81rf83aqfddch5it.apps.googleusercontent.com",
+//          "client_type": 1,
+//          "android_info": {
+//            "package_name": "com.peeoner174.msi.oneapril2",
+//            "certificate_hash": "cd4f02d656bdb021cc3543db0e11b9a99fe46b50"
+//          }
+//        },
+//        {
+//          "client_id": "832354546607-rf29gc2vbsf77qpdcvg9o8vc37hh9lak.apps.googleusercontent.com",
+//          "client_type": 3
+//        }
+//      ],
+//      "api_key": [
+//        {
+//          "current_key": "AIzaSyA5TSqXvtTztsQWt06kK7eUARDrrPsLokw"
+//        }
+//      ],
+//      "services": {
+//        "analytics_service": {
+//          "status": 1
+//        },
+//        "appinvite_service": {
+//          "status": 2,
+//          "other_platform_oauth_client": [
+//            {
+//              "client_id": "832354546607-rf29gc2vbsf77qpdcvg9o8vc37hh9lak.apps.googleusercontent.com",
+//              "client_type": 3
+//            }
+//          ]
+//        },
+//        "ads_service": {
+//          "status": 2
+//        }
+//      }
+//    }
+//  ],
+//  "configuration_version": "1"
+//}

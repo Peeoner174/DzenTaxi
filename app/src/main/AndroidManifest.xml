@@ -12,42 +12,51 @@
 
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".driver.activity.UserInfoActivity"
 
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".driver.activity.TapleActivity"
-            android:label="Лента"
+        <activity android:name=".dzen.ui.activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".dzen.ui.activity.UserInfoActivity"
+
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".dzen.ui.activity.TapleActivity"
             android:theme="@style/AppTheme.NoActionBar"
         />
 
-        <activity android:name=".driver.activity.MapsActivity"
+        <activity android:name=".dzen.ui.activity.MapsActivity"
             android:label="Карта"
             android:theme="@style/AppTheme.NoActionBar"
         />
 
-        <activity android:name=".driver.activity.MainGalleryActivity"
+        <activity android:name=".dzen.ui.activity.MainGalleryActivity"
             android:label="Галерея"
             android:theme="@style/AppTheme.NoActionBar"/>
 
-        <activity android:name=".driver.activity.DetailGalleryActivity"
+        <activity android:name=".dzen.ui.activity.DetailGalleryActivity"
             android:label="Подробно"
             android:theme="@style/AppTheme.NoActionBar"/>
 
-        <activity android:name=".driver.activity.NoteActivity"
-            android:label="Заметки"/>
+        <activity android:name=".dzen.ui.activity.NoteActivity"
+            android:label="Заметки"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -63,6 +72,9 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDmGe1fZdGOTtznzB1kd9LMkvN2VfH887c" />
+
+
+
     </application>
 
 </manifest>

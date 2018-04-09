@@ -7,4 +7,5 @@
     <color name="placeholder_bg">#dddddd</color>
     <color name="medium_grey">#767676</color>
     <color name="color_item_divider">#cccccc</color>
+    <color name="black">#000</color>
 </resources>
