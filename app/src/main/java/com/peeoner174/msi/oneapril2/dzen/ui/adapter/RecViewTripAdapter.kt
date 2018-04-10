@@ -39,7 +39,6 @@ import java.text.FieldPosition
 class RecViewTripAdapter(private val trips: ArrayList<Trip>, private val  mCtx: Context)
     : RecyclerView.Adapter<RecViewTripAdapter.TripViewHolder>() {
 
-
     /**
      * @return количество элементов для отображения
      */

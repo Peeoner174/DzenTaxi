@@ -81,8 +81,6 @@ class UserInfoActivity : AppCompatActivity() {
                 simpleProgressBarUser.visibility = View.INVISIBLE
 
             }
-
-
         }
 
         setViewPager()

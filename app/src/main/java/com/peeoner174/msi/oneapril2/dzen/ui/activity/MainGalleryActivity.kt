@@ -22,6 +22,7 @@ import com.peeoner174.msi.oneapril2.dzen.producer.GalleryDataLoaderWeb
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.launch
 import kotlin.collections.ArrayList
+import com.peeoner174.msi.oneapril2.MySingleton
 
 /**Главное окно галереи**/
 
@@ -37,8 +38,7 @@ class MainGalleryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_galley)
         setToolbar()
-        val simpleProgressBar =  findViewById(R.id.simpleProgressBar1) as ProgressBar
-
+        val simpleProgressBar = findViewById<ProgressBar>(R.id.simpleProgressBar1)
 
         val intent: Bundle? = intent.extras
         url = intent?.getString("URL_Gallery")
@@ -46,19 +46,15 @@ class MainGalleryActivity : AppCompatActivity() {
 
         launch(UI) {
             simpleProgressBar.visibility = View.VISIBLE
-            val cashJob = galleryDataLoaderWeb.loadGalleryFromCache(application as App).await()
-          //  if (cashJob.isNotEmpty()){
 
-            //    showGallery(cashJob)
-              //  simpleProgressBar.visibility = View.INVISIBLE
-            //} else {
+            val cashJob = galleryDataLoaderWeb.loadGalleryFromCache(application as App).await()
+
             val job = galleryDataLoaderWeb.loadGallery(url)
             showGallery(job.await())
+
             simpleProgressBar.visibility = View.INVISIBLE
             galleryDataLoaderWeb.loadToCashe(application as App, job.await())
 
-
-            //}
         }
 
         mRecyclerView = findViewById<RecyclerView>(R.id.list)

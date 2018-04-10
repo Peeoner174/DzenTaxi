@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.peeoner174.msi.oneapril2.R
 import com.peeoner174.msi.oneapril2.MySingleton
+/**Страница регистрации пользователя**/
 
 class LoginActivity : AppCompatActivity() {
 
@@ -27,37 +28,43 @@ class LoginActivity : AppCompatActivity() {
         registerBtn = findViewById<Button>(R.id.btRegister)
         loginEt = findViewById<EditText>(R.id.etLogin)
         passwordEt = findViewById<EditText>(R.id.etPassword)
-        //Реализуем интерфейс OnClickListener, определяем для него метод onClick, где v - View - элемент, который был нажат.
-        //Вместо полноценной регистрации пока заглушка
-        val onClickListener = View.OnClickListener { v ->
-            when (v.id) {
-                R.id.btLogin -> {val mainIntend = Intent(this@LoginActivity, TapleActivity::class.java)
-                                startActivity(mainIntend)
-//                    if((loginEt.text.toString()=="Pavel"|| loginEt.text.toString()=="Pavel ") && passwordEt.text.toString()=="0000")
-//                    {
-//                        user.myVariable = 0
-//                        val mainIntend = Intent(this@LoginActivity, TapleActivity::class.java)
-//                        startActivity(mainIntend)
-//                    }
-//                    else if((loginEt.text.toString()=="Admin"|| loginEt.text.toString()=="Admin ") && passwordEt.text.toString()=="0000")
-//                    {
-//                        user.myVariable = 1
-//                        Log.d("Admin", user.myVariable.toString())
-//                        val mainIntend = Intent(this@LoginActivity, TapleActivity::class.java)
-//                        startActivity(mainIntend)
-//                    }
-//
-//                    else  Toast.makeText(this,
-//                            "Войти не удалось. Проверьте, что вы правильно вводите логин и пароль. Спасибо!", Toast.LENGTH_SHORT).show()
-                }
 
-                R.id.btRegister -> {
-                }
-                else -> true
-            }
-        }
 
         loginBtn.setOnClickListener(onClickListener)
         registerBtn.setOnClickListener(onClickListener)
+    }
+
+    //Реализуем интерфейс OnClickListener, определяем для него метод onClick, где v - View - элемент, который был нажат.
+    //Вместо полноценной регистрации пока заглушка
+    private val onClickListener = View.OnClickListener { v ->
+        when (v.id) {
+            R.id.btLogin ->
+            {
+                //   {val mainIntend = Intent(this@LoginActivity, TapleActivity::class.java)
+//                                startActivity(mainIntend)
+
+
+                if((loginEt.text.toString()=="Pavel"|| loginEt.text.toString()=="Pavel ") && passwordEt.text.toString()=="0000")
+                {
+                    user.myVariable = 0
+                    val mainIntend = Intent(this@LoginActivity, TapleActivity::class.java)
+                    startActivity(mainIntend)
+                }
+                else if((loginEt.text.toString()=="Admin"|| loginEt.text.toString()=="Admin ") && passwordEt.text.toString()=="0000")
+                {
+                    user.myVariable = 1
+                    Log.d("Admin", user.myVariable.toString())
+                    val mainIntend = Intent(this@LoginActivity, TapleActivity::class.java)
+                    startActivity(mainIntend)
+                }
+
+                else  Toast.makeText(this,
+                        "Войти не удалось. Проверьте, что вы правильно вводите логин и пароль. Спасибо!", Toast.LENGTH_SHORT).show()
+            }
+
+            R.id.btRegister -> {
+            }
+            else -> true
+        }
     }
 }

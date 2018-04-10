@@ -29,11 +29,11 @@ class TripDataLoaderWeb {
 
         trips
     }
-
+    //Загрузка из БД
     fun loadTripFromCache(app: App) = async(CommonPool) {
         app.database.tripDao().getAll()
     }
-
+    //Загрузка в БД
     fun loadToCashe(app: App, trips: List<Trip>) = async(CommonPool){
         app.database.tripDao().insertAll(trips)
     }

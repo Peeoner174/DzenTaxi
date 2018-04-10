@@ -4,7 +4,7 @@ import android.app.Application
 import android.arch.persistence.room.PrimaryKey
 import android.arch.persistence.room.Room
 import com.peeoner174.msi.oneapril2.dzen.data.db.AppDatabase
-//import com.squareup.leakcanary.LeakCanary
+////import com.squareup.leakcanary.LeakCanary
 
 /**
  * Класс Application - это базовый класс приложения android. Создается раньше любого другого класса
@@ -32,10 +32,7 @@ class App: Application(){
                 .build()
 
     }
-    fun setUserId(id:Int){
 
-
-    }
 
 
 }

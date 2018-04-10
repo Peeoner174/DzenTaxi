@@ -31,11 +31,11 @@ class UserInfoLoad {
         users
     }
 
-
+    //Загрузка из БД
     fun loadUserFromCache(app: App) = async(CommonPool) {
         app.database.userDao().getAll()
     }
-
+    //Загрузка в БД
     fun loadToCashe(app: App, users: List<User>) = async(CommonPool){
         app.database.userDao().insertAll(users)
     }

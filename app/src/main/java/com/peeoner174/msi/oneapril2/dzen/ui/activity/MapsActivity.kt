@@ -72,7 +72,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             clusterItems.add(SampleClusterItem(markers[i]))
         }
         clusterManager.setItems(clusterItems)
-        clusterManager.setItems(clusterItems)
     }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->

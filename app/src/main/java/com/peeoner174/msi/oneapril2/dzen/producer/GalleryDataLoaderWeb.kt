@@ -28,11 +28,11 @@ class GalleryDataLoaderWeb {
         val notes = Gson().fromJson(responseText, Gallery.List::class.java)
         notes
     }
-
+    //Загрузка данных из БД
     fun loadGalleryFromCache(app: App) = async(CommonPool) {
         app.database.galleryDao().getAll()
     }
-
+    //Загрузка данных в БД
     fun loadToCashe(app: App, gallery: List<Gallery>) = async(CommonPool){
         app.database.galleryDao().insertAll(gallery)
 

@@ -1,10 +1,12 @@
 package com.peeoner174.msi.oneapril2;
 
 import android.util.Log;
+//Хранит id-пользователя под которым идёт сессия
 
 public class MySingleton {
     private static MySingleton mInstance;
     private int MyVariable;
+    private String idGallery = null;
 
     public static void initInstance() {
         Log.d("MY", "MySingleton::InitInstance()");

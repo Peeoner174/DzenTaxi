@@ -54,27 +54,31 @@ class TapleActivity : AppCompatActivity() {
         //Выносим загрузку данных   в отдельный поток
         launch(UI) {
             simpleProgressBar.visibility = View.VISIBLE
+
             val cashJob = dataLoader.loadTripFromCache(application as App).await()
             if (cashJob.isNotEmpty()){
                 showUsers(cashJob)
-                Log.d("CashLoad", "CashLoad")
+                //Log.d("CashLoad", "CashLoad")
                 simpleProgressBar.visibility = View.INVISIBLE
+
             } else {
                 val webJob = dataLoader.loadTrip()
                 showUsers(webJob.await())
-                Log.d("WebLoad", "WebLoad")
+               //Log.d("WebLoad", "WebLoad")
+
                 simpleProgressBar.visibility = View.INVISIBLE
+
                 dataLoader.loadToCashe(application as App, webJob.await())
 
             }
         }
 
-        Log.d("onCreate", "Cteate")
+     //   Log.d("onCreate", "Cteate")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("onResume", "Resume")
+       // Log.d("onResume", "Resume")
 
     }
 
@@ -98,8 +102,7 @@ class TapleActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> {Toast.makeText(this,"Войти не удалось. Проверьте, что вы правильно вводите логин и пароль. Спасибо!", Toast.LENGTH_SHORT).show()
-true}
+            R.id.action_settings -> {true}
             R.id.action_refresh -> {refresh()
                 true}
             else -> super.onOptionsItemSelected(item)

@@ -42,7 +42,6 @@ class NoteActivity: AppCompatActivity() {
         setToolbar()
         val simpleProgressBar =  findViewById(R.id.simpleProgressBar2) as ProgressBar
 
-
         //Передача данных между активити, получает данные, заносит их в Bundle
         val intent: Bundle? = intent.extras
         url = intent?.getString("URL_Note")
@@ -53,8 +52,10 @@ class NoteActivity: AppCompatActivity() {
         //Выносим загрузку данных в отдельный поток
         launch(UI) {
             simpleProgressBar.visibility = View.VISIBLE
+
             val job = dataLoader.loadNote(url)
             showUsers(job.await())
+
             simpleProgressBar.visibility = View.INVISIBLE
         }
     }
